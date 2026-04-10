@@ -393,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 919.06604, y: -207.93001}
+  m_AnchoredPosition: {x: 919.0625, y: -207.93001}
   m_SizeDelta: {x: 610.4266, y: 63.196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &188654671
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: xbox live account
+  m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be38b0ccf121b9e40bd0330aa445cb2f, type: 2}
   m_sharedMaterial: {fileID: -8826111640909334685, guid: be38b0ccf121b9e40bd0330aa445cb2f, type: 2}
@@ -633,8 +633,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 506231168}
-  - component: {fileID: 506231170}
   - component: {fileID: 506231169}
+  - component: {fileID: 506231171}
   m_Layer: 0
   m_Name: ButtonManager
   m_TagString: Untagged
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021dabe17cf48384c8767e3af9101dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &506231170
+--- !u!114 &506231171
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -678,7 +678,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 506231167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e6c98b0bf5c1574799b9c14f8c5f4d6, type: 3}
+  m_Script: {fileID: 11500000, guid: dea13701ee2f19d49a4f539313166e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &567521586
@@ -764,9 +764,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 506231169}
-        m_TargetAssemblyTypeName: ButtonPlatformer, Assembly-CSharp
-        m_MethodName: xbox
+      - m_Target: {fileID: 506231171}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -982,7 +982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -753, y: -392}
+  m_AnchoredPosition: {x: -753, y: -361}
   m_SizeDelta: {x: 356.185, y: 78.1765}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702614321
@@ -1311,14 +1311,14 @@ RectTransform:
   m_GameObject: {fileID: 1284900785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.93748, z: 1}
+  m_LocalScale: {x: 1, y: 1.0429465, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1693844306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -29, y: -244}
+  m_AnchoredPosition: {x: -28.999756, y: -232}
   m_SizeDelta: {x: -1222.4492, y: -609.3158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284900787
@@ -1442,9 +1442,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 506231169}
-        m_TargetAssemblyTypeName: ButtonPlatformer, Assembly-CSharp
-        m_MethodName: NewGame
+      - m_Target: {fileID: 506231171}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1533,7 +1533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.056}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11.9275, y: -2.4682}
+  m_AnchoredPosition: {x: -11.9296875, y: -2.46875}
   m_SizeDelta: {x: -22.9762, y: 3.0842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1693844307
@@ -1608,7 +1608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.095792376, y: 0.013472701}
   m_AnchorMax: {x: 0.99323004, y: 0.84411824}
-  m_AnchoredPosition: {x: -84.439, y: 65.658}
+  m_AnchoredPosition: {x: -84.4375, y: 65.66016}
   m_SizeDelta: {x: 194.56, y: 156.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1766615865

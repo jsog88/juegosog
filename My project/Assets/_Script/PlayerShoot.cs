@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Pllayershoot : MonoBehaviour
+public class Playershoot : MonoBehaviour
 {
     public GameObject bullet;
     public Transform shootPos;
