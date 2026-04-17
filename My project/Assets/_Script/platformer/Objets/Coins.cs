@@ -11,6 +11,7 @@ public class Coins : MonoBehaviour
         {
             PlayerStats.score += coinValue;
             Debug.Log(PlayerStats.score);
+            AudioManager.instance.PlayCoin();
             Destroy(gameObject);
         }
 
